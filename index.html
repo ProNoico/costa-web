@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO -->
-    <title>Costa Web | Hago que tu Negocio del Partido de La Costa Venda Más</title>
-    <meta name="description" content="¿Tu negocio no aparece en Google cuando los turistas buscan? Creo la página web profesional que necesitas para atraer más clientes, generar confianza y aumentar tus ventas.">
+    <!-- SEO Estratégico -->
+    <title>Costa Web | Diseño Web que Atrae Clientes en La Costa. Garantizado.</title>
+    <meta name="description" content="¿Tu negocio en La Costa es invisible? Creo tu página web profesional en 48hs para que dejes de perder clientes. Servicio local y con garantía de satisfacción.">
     
     <!-- Open Graph y Favicon -->
-    <meta property="og:title" content="Costa Web | Hago que tu Negocio Venda Más">
-    <meta property="og:description" content="Servicio de diseño web local y personalizado en el Partido de La Costa.">
-    <meta property="og:image" content="https://tu-sitio-costaweb.netlify.app/imagenes/og-costaweb.jpg">
+    <meta property="og:title" content="Costa Web | Tu Página Web Profesional en 48 Horas">
+    <meta property="og:description" content="Servicio de diseño web local con garantía de satisfacción para negocios del Partido de La Costa.">
+    <meta property="og:image" content="https://tu-sitio-costaweb.netlify.app/imagenes/og-costaweb-oferta.jpg">
     <meta property="og:url" content="https://tu-sitio-costaweb.netlify.app">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -19,92 +19,149 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .gradient-bg { background: linear-gradient(135deg, #1e3a8a, #312e81); }
+        /* Letras y colores modernos inspirados en tus referencias */
+        h1, h2, h3, .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-white text-slate-800">
 
     <!-- ===== BARRA DE NAVEGACIÓN ===== -->
-    <nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
-        <div class="container mx-auto max-w-7xl px-4">
-            <div class="flex justify-between items-center py-4">
-                <a href="#" class="text-2xl font-bold text-indigo-800">Costa Web</a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#problema" class="text-gray-600 hover:text-indigo-600">El Problema</a>
-                    <a href="#solucion" class="text-gray-600 hover:text-indigo-600">La Solución</a>
-                    <a href="#portafolio" class="text-gray-600 hover:text-indigo-600">Mi Trabajo</a>
-                    <a href="#contacto" class="bg-indigo-600 text-white font-bold py-2 px-5 rounded-full hover:bg-indigo-700 transition-colors">Charlemos</a>
-                </div>
+    <<nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
+    <div class="container mx-auto max-w-7xl px-4">
+        <div class="flex justify-between items-center py-4">
+            <a href="#">
+                <img src="imagenes/logo.png" alt="Logo de Costa Web" class="h-20">
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-display font-bold">
+                <a href="#solucion" class="text-gray-600 hover:text-indigo-600 transition-colors">La Solución</a>
+                <a href="#oferta" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Oferta</a>
+                <a href="#portafolio" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Trabajo</a>
+                <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition-colors">Preguntas</a>
+                <a href="#contacto" class="bg-indigo-600 text-white py-2 px-5 rounded-full hover:bg-indigo-700 transition-colors">Charlemos</a>
+            </div>
+             <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700">
+                    <i class="ph-bold ph-list text-3xl"></i>
+                </button>
             </div>
         </div>
-    </nav>
+    </div>
+     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#solucion" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">La Solución</a>
+        <a href="#oferta" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Oferta</a>
+        <a href="#portafolio" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Trabajo</a>
+        <a href="#faq" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Preguntas</a>
+        <a href="#contacto" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Charlemos</a>
+    </div>
+</nav>
 
-    <!-- ===== SECCIÓN HERO ===== -->
+    <!-- ===== SECCIÓN HERO (TOCANDO EL DOLOR) ===== -->
     <header class="bg-white">
         <div class="container mx-auto max-w-7xl px-4 py-20 md:py-32 text-center">
-            <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight" data-aos="fade-up">¿Tu negocio en La Costa es invisible<br class="hidden md:block"> para los turistas en Google?</h1>
-            <p class="mt-4 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">Dejá de perder clientes. Te creo una página web profesional para que te encuentren, confíen en vos y te contacten. Soy Damian, tu desarrollador web local.</p>
+            <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight" data-aos="fade-up">¿Tu negocio en La Costa es invisible?</h1>
+            <p class="mt-4 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">Dejá de depender del que pasa caminando. Te creo una página web para que dejes de perder clientes y te la entrego en 48hs.</p>
             <div class="mt-8" data-aos="fade-up" data-aos-delay="400">
-                <a href="#contacto" class="bg-indigo-600 text-white font-bold py-4 px-10 rounded-full hover:bg-indigo-700 transition-transform hover:scale-105 inline-block text-lg">Solicitar Asesoría Gratuita</a>
+                <a href="#oferta" class="bg-indigo-600 text-white font-bold py-4 px-10 rounded-full hover:bg-indigo-700 transition-transform hover:scale-105 inline-block text-lg">Ver Oferta de Lanzamiento</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- ===== SECCIÓN PROBLEMA ===== -->
-        <section id="problema" class="py-20 bg-slate-100">
-            <div class="container mx-auto max-w-7xl px-4">
-                <div class="text-center mb-12" data-aos="fade-up">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900">¿Te suena familiar?</h2>
-                    <p class="text-gray-600 mt-3">Si tenés un negocio en el Partido de La Costa, seguro te enfrentás a esto:</p>
+
+        <!-- ===== SECCIÓN PROBLEMA/AGITACIÓN ===== -->
+        <section class="py-20 bg-slate-50">
+            <div class="container mx-auto max-w-5xl px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-aos="fade-up">La forma en que los turistas eligen dónde comprar cambió para siempre.</h2>
+                <p class="text-gray-600 mt-3 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Si no estás donde ellos buscan, simplemente no existís.</p>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <i class="ph-bold ph-storefront text-5xl text-red-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Dependés del que pasa caminando</h3>
+                        <p class="text-gray-600">Tu facturación depende del azar y del clima. No tenés un sistema predecible para atraer clientes.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <i class="ph-bold ph-magnifying-glass text-5xl text-red-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Sos invisible en Google</h3>
+                        <p class="text-gray-600">Cuando un turista busca "Hotel en San Bernardo" en su celular, tu competencia se lleva esa reserva.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <i class="ph-bold ph-instagram-logo text-5xl text-red-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Tu Instagram no convierte</h3>
+                        <p class="text-gray-600">No lográs transmitir la confianza necesaria para que te elijan sobre los demás.</p>
+                    </div>
                 </div>
-                <div class="grid md:grid-cols-3 gap-8 text-center">
-                    <div class="p-6" data-aos="fade-up">
-                        <i class="ph-bold ph-eye-closed text-6xl text-indigo-500 mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Sos Invisible</h3>
-                        <p class="text-gray-600">Los turistas buscan en Google Maps "dónde comer" o "inmobiliaria" y vos no aparecés. Le están comprando a tu competencia.</p>
+            </div>
+        </section>
+        
+        <!-- ===== SECCIÓN SOLUCIÓN (ESTRUCTURA PREFERIDA) ===== -->
+        <section id="solucion" class="py-20">
+            <div class="container mx-auto max-w-7xl px-4 md:flex items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="imagenes/laptop.png" class="rounded-xl shadow-2xl" alt="Hombre profesional trabajando en una laptop que muestra un sitio web.">
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
+                    <span class="font-bold text-indigo-600 uppercase">La Solución</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">Tu propia vidriera digital, <br>abierta 24/7.</h2>
+                    <p class="text-lg text-gray-600 mt-4">Una página web profesional es tu activo digital más importante. Es tu "casa propia" en internet, donde vos ponés las reglas.</p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-start"><i class="ph-bold ph-check-circle text-2xl text-green-500 mr-3 mt-1"></i><div><strong class="font-bold">Generá Confianza:</strong> Mostrá tu trabajo y quién sos de forma profesional.</div></li>
+                        <li class="flex items-start"><i class="ph-bold ph-check-circle text-2xl text-green-500 mr-3 mt-1"></i><div><strong class="font-bold">Atraé Clientes de Google:</strong> Aparecé cuando la gente busca activamente lo que ofrecés.</div></li>
+                        <li class="flex items-start"><i class="ph-bold ph-check-circle text-2xl text-green-500 mr-3 mt-1"></i><div><strong class="font-bold">Centralizá tu Información:</strong> El único lugar donde tus clientes encuentran todo sobre vos, sin distracciones.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN OFERTA IRRESISTIBLE (AJUSTADA) ===== -->
+        <section id="oferta" class="py-20 bg-indigo-800 text-white">
+            <div class="container mx-auto max-w-4xl px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-extrabold">Mi Oferta de Lanzamiento</h2>
+                    <p class="text-indigo-200 mt-3">Una solución completa, clara y sin riesgos para tu negocio.</p>
+                </div>
+                
+                <div class="bg-white text-slate-800 rounded-2xl shadow-2xl p-8 md:p-12 border-4 border-yellow-400" data-aos="zoom-in-up">
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold font-display">Pack "Presencia Digital Profesional"</h3>
+                        <div class="flex justify-center items-baseline my-6">
+                            <span class="text-2xl font-bold text-gray-400 line-through mr-4">Valor Real: $250 USD</span>
+                            <span class="text-6xl font-extrabold text-indigo-600">$120 USD</span>
+                        </div>
+                        <p class="text-sm text-gray-500">(Pago único. O su equivalente en Pesos Argentinos)</p>
                     </div>
-                    <div class="p-6" data-aos="fade-up" data-aos-delay="200">
-                        <i class="ph-bold ph-instagram-logo text-6xl text-indigo-500 mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Tu Instagram no alcanza</h3>
-                        <p class="text-gray-600">Un perfil de Instagram está bien, pero no transmite la seriedad y confianza que un cliente necesita para hacer una compra importante.</p>
+
+                    <div>
+                        <h4 class="col-span-full text-lg font-bold border-b pb-2 mb-4">Esto es todo lo que te llevás:</h4>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-center"><i class="ph-fill ph-check-circle text-green-500 mr-3"></i><div>Página Web Profesional de una sección</div></li>
+                            <li class="flex items-center"><i class="ph-fill ph-check-circle text-green-500 mr-3"></i><div>Diseño 100% Adaptable a Celulares</div></li>
+                            <li class="flex items-center"><i class="ph-fill ph-check-circle text-green-500 mr-3"></i><div>SEO Inicial para aparecer en Google</div></li>
+                            <li class="flex items-center"><i class="ph-fill ph-check-circle text-green-500 mr-3"></i><div>Conexión a tus Redes Sociales y WhatsApp</div></li>
+                            <li class="flex items-center"><i class="ph-fill ph-check-circle text-green-500 mr-3"></i><div>Trámite del Dominio `.com.ar` a tu nombre</div></li>
+                        </ul>
+                        <h4 class="col-span-full text-lg font-bold border-b pb-2 my-6">Y POR SER UNA OFERTA DE LANZAMIENTO, TE SUMO ESTOS BONOS GRATIS:</h4>
+                        <ul class="space-y-5 text-lg">
+                             <li class="flex items-start"><i class="ph-fill ph-gift text-2xl text-yellow-500 mr-3 mt-1"></i><div><strong class="text-indigo-700">BONO: Creación de tu Perfil de Negocio en Google Maps</strong><br><span class="text-sm text-slate-500">Para que aparezcas en el mapa cuando te busquen cerca.</span></div></li>
+                             <li class="flex items-start"><i class="ph-fill ph-shield-check text-2xl text-yellow-500 mr-3 mt-1"></i><div><strong class="text-indigo-700">GARANTÍA: 100% de Satisfacción con el Diseño</strong><br><span class="text-sm text-slate-500">No considero el trabajo terminado hasta que estés totalmente conforme con el resultado.</span></div></li>
+                        </ul>
                     </div>
-                    <div class="p-6" data-aos="fade-up" data-aos-delay="400">
-                        <i class="ph-bold ph-question text-6xl text-indigo-500 mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">No sabés por dónde empezar</h3>
-                        <p class="text-gray-600">La tecnología te parece complicada y no tenés tiempo. Necesitás una solución simple y directa de alguien de confianza.</p>
+                     <div class="mt-10 text-center">
+                        <a href="https://wa.me/TU_NUMERO_DE_WHATSAPP?text=Hola%20Damian!%20Quiero%20la%20Oferta%20'Despegue%20Digital'%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-slate-900 font-extrabold py-4 px-10 rounded-full hover:bg-yellow-300 transition-transform hover:scale-105 inline-block text-xl shadow-lg">
+                            ¡Quiero mi página web!
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SECCIÓN SOLUCIÓN ===== -->
-        <section id="solucion" class="py-20">
-            <div class="container mx-auto max-w-7xl px-4 md:flex items-center gap-12">
-                <div class="md:w-1/2" data-aos="fade-right">
-                    <img src="imagenes/laptop.png" class="rounded-xl shadow-2xl" alt="Persona usando una laptop en un escritorio limpio.">
-                </div>
-                <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
-                    <span class="font-bold text-indigo-600">LA SOLUCIÓN</span>
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">Tu propia vidriera digital <br>abierta 24/7.</h2>
-                    <p class="text-lg text-gray-600 mt-4">Una página web profesional es tu activo digital más importante. Es tu "casa propia" en internet, donde vos ponés las reglas.</p>
-                    <ul class="mt-6 space-y-4">
-                        <li class="flex items-start"><i class="ph-bold ph-check-circle text-2xl text-green-500 mr-3 mt-1"></i><div><span class="font-bold">Generá Confianza:</span> Mostrá tu trabajo y quién sos de forma profesional.</div></li>
-                        <li class="flex items-start"><i class="ph-bold ph-check-circle text-2xl text-green-500 mr-3 mt-1"></i><div><span class="font-bold">Atraé Clientes de Google:</span> Aparecé cuando la gente busca activamente lo que ofrecés.</div></li>
-                        <li class="flex items-start"><i class="ph-bold ph-check-circle text-2xl text-green-500 mr-3 mt-1"></i><div><span class="font-bold">Centralizá tu Información:</span> El único lugar donde tus clientes encuentran todo sobre vos, sin distracciones.</div></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- ===== SECCIÓN PORTAFOLIO ===== -->
-        <section id="portafolio" class="py-20 bg-slate-100">
+        <!-- ===== SECCIÓN PORTAFOLIO (ESTRUCTURA PREFERIDA) ===== -->
+        <section id="portafolio" class="py-20 bg-slate-50">
             <div class="container mx-auto max-w-7xl px-4">
                 <div class="text-center mb-12" data-aos="fade-up">
                     <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Mi Trabajo</h2>
@@ -117,7 +174,7 @@
                     <div class="md:w-1/2 p-8 md:p-12">
                         <span class="text-sm font-semibold text-indigo-600 uppercase">Caso de Éxito</span>
                         <h3 class="text-3xl font-bold mt-2 mb-4">Placas de La Costa</h3>
-                        <p class="text-gray-600 mb-6">Creé un sitio de presentación que les permite mostrar su catálogo de forma profesional y centralizar las consultas por WhatsApp. Ahora tienen una herramienta de ventas clara que genera confianza y funciona las 24 horas.</p>
+                        <p class="text-gray-600 mb-6">Creé un sitio de presentación profesional que les permitió centralizar sus consultas por WhatsApp y mostrar su catálogo de forma clara, generando más confianza y ventas.</p>
                         <a href="https://placasdelacosta.com.ar/" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-700 hover:text-indigo-900 inline-flex items-center group">
                             Ver el Sitio en Vivo <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                         </a>
@@ -126,84 +183,54 @@
             </div>
         </section>
 
-        <!-- ===== SECCIÓN SOBRE MÍ ===== -->
-        <section id="sobre-mi" class="py-20">
-            <div class="container mx-auto max-w-4xl px-4 text-center" data-aos="fade-up">
-                <!-- Reemplazar con una foto tuya -->
-                <img src="imagenes/yo.jpg" class="w-32 h-32 rounded-full mx-auto shadow-xl mb-6" alt="Foto de Damian, desarrollador de Costa Web">
-                <h2 class="text-4xl font-bold text-gray-900">Hola, soy Damián.</h2>
-                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-                    Como emprendedor del Partido de La Costa, entiendo los desafíos y las oportunidades de nuestra zona. Me apasiona la tecnología y ayudar a que los negocios locales como el tuyo crezcan y se vean profesionales. Mi servicio es 100% personal: hablamos, entiendo tu negocio y te creo una solución a medida. Sin intermediarios ni lenguaje técnico complicado.
-                </p>
-            </div>
-        </section>
-        
-        <!-- ===== SECCIÓN FAQ (Preguntas Frecuentes) ===== -->
-        <section id="faq" class="py-20 bg-slate-100">
+        <!-- ===== SECCIÓN FAQ (DERRIBAR OBJECIONES CON TODAS LAS PREGUNTAS) ===== -->
+        <section id="faq" class="py-20">
             <div class="container mx-auto max-w-4xl px-4">
                 <div class="text-center mb-12" data-aos="fade-up">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Preguntas Frecuentes</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Seguro te estás preguntando...</h2>
                 </div>
-                <div class="space-y-4" data-aos="fade-up">
-                    <details class="bg-white p-6 rounded-lg shadow-md group">
-                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-                            ¿Por qué necesito una web si ya tengo Instagram?
-                            <i class="ph-bold ph-plus-circle text-2xl group-open:hidden"></i>
-                            <i class="ph-bold ph-minus-circle text-2xl hidden group-open:block"></i>
-                        </summary>
-                        <p class="text-gray-600 mt-4">Instagram es genial, pero es una plataforma alquilada. Tu web es tu propiedad, te da credibilidad profesional y te permite ser encontrado en Google por clientes que buscan activamente una solución, algo que en Instagram no pasa.</p>
-                    </details>
-                    <details class="bg-white p-6 rounded-lg shadow-md group">
-                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-                            ¿En cuánto tiempo está lista la página?
-                            <i class="ph-bold ph-plus-circle text-2xl group-open:hidden"></i>
-                            <i class="ph-bold ph-minus-circle text-2xl hidden group-open:block"></i>
-                        </summary>
-                        <p class="text-gray-600 mt-4">Una vez que me entregás todo el material (textos, fotos), una Página de Presentación suele estar lista en aproximadamente 7 a 10 días hábiles.</p>
-                    </details>
-                    <details class="bg-white p-6 rounded-lg shadow-md group">
-                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-                            ¿El dominio y el hosting son realmente míos?
-                            <i class="ph-bold ph-plus-circle text-2xl group-open:hidden"></i>
-                            <i class="ph-bold ph-minus-circle text-2xl hidden group-open:block"></i>
-                        </summary>
-                        <p class="text-gray-600 mt-4">¡Sí, 100%! Es parte de mi servicio transparente. El dominio se registra siempre a tu nombre, y te explico cómo funciona el hosting para que tengas control total. Vos sos el único dueño de tu presencia online.</p>
-                    </details>
+                <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-bold text-xl text-indigo-700 mt-8 pt-4 border-t">Sobre la Oferta</h3>
+                    <details class="bg-slate-50 p-6 rounded-lg group"><summary class="font-bold text-lg cursor-pointer flex justify-between items-center">¿Por qué este precio? Parece demasiado bueno.</summary><p class="text-gray-600 mt-4">Porque estoy lanzando mi marca en La Costa y mi objetivo principal ahora es construir una base de casos de éxito locales. No tengo los costos fijos de una gran agencia y te traslado ese ahorro. Esta oferta es por tiempo limitado para mis primeros clientes.</p></details>
+                    <details class="bg-slate-50 p-6 rounded-lg group"><summary class="font-bold text-lg cursor-pointer flex justify-between items-center">¿Hay algún costo oculto o mensual?</summary><p class="text-gray-600 mt-4">No. El precio de la oferta es un pago único. El único costo recurrente que existe es la renovación anual del dominio `.com.ar` (aproximadamente $8.500 pesos por año), que se paga directamente a NIC Argentina. Todo 100% transparente.</p></details>
+                    <h3 class="font-bold text-xl text-indigo-700 mt-8 pt-4 border-t">Sobre el Proceso y la Tecnología</h3>
+                    <details class="bg-slate-50 p-6 rounded-lg group"><summary class="font-bold text-lg cursor-pointer flex justify-between items-center">¿En cuánto tiempo entregan la página?</summary><p class="text-gray-600 mt-4">Una vez que me entregás todo el material necesario (textos, fotos y logo si tenés), el plazo de entrega es de aproximadamente **7 días hábiles**. Mi proceso está súper optimizado para ser rápido sin sacrificar la calidad.</p></details>
+                    <details class="bg-slate-50 p-6 rounded-lg group"><summary class="font-bold text-lg cursor-pointer flex justify-between items-center">¿Qué pasa si no tengo logo o no sé qué textos poner?</summary><p class="text-gray-600 mt-4">No es problema. Si no tenés logo, creo un diseño de texto profesional para tu marca sin costo. Y si no sabés qué escribir, con nuestra charla inicial yo mismo redacto los textos enfocados en vender para que tu web comunique de la mejor manera. Vos solo tenés que darme el OK.</p></details>
+                    <details class="bg-slate-50 p-6 rounded-lg group"><summary class="font-bold text-lg cursor-pointer flex justify-between items-center">¿La página es realmente mía para siempre?</summary><p class="text-gray-600 mt-4">Absolutamente. El dominio `.com.ar` se registra a tu nombre. La página es tuya. Si el día de mañana querés llevarla a otro lado o que la maneje otro profesional, te entrego todos los archivos. Sin ataduras.</p></details>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SECCIÓN CONTACTO FINAL ===== -->
-        <section id="contacto" class="gradient-bg text-white">
+        <!-- ===== SECCIÓN CONTACTO FINAL (CIERRE DE VENTA) ===== -->
+        <section id="contacto" class="bg-slate-900 text-white">
             <div class="container mx-auto max-w-7xl px-4 py-20 md:py-24 text-center" data-aos="zoom-in">
-                <h2 class="text-4xl font-extrabold">Dejá de perder clientes.</h2>
-                <p class="mt-3 max-w-2xl mx-auto text-indigo-200">El primer paso para que tu negocio se vea profesional está a un mensaje de distancia. Mandame un WhatsApp y charlamos sin ningún tipo de compromiso.</p>
-                <div class="mt-8">
-                    <a href="https://wa.me/TU_NUMERO_DE_WHATSAPP?text=Hola%20Damian!%20Vi%20tu%20página%20y%20quisiera%20una%20asesoría%20gratuita." target="_blank" rel="noopener noreferrer" class="bg-white text-indigo-700 font-bold py-4 px-10 rounded-full hover:bg-gray-200 transition-transform hover:scale-105 inline-flex items-center text-lg">
+                <h2 class="text-4xl font-extrabold">Tenés dos opciones...</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-slate-400">1. Seguir como hasta ahora, esperando que la gente entre por la puerta y viendo cómo tu competencia se queda con los clientes que buscan en internet.<br><br>2. Tomar una decisión inteligente, invertir una única vez en un activo que trabaje para vos 24/7 y empezar a recibir las consultas que te estás perdiendo. Con cero riesgo por mi garantía.</p>
+                <div class="mt-10">
+                    <a href="https://wa.me/TU_NUMERO_DE_WHATSAPP?text=Hola%20Damian!%20Quiero%20la%20Oferta%20'Despegue%20Digital'%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-slate-900 font-extrabold py-4 px-10 rounded-full hover:bg-yellow-300 transition-transform hover:scale-105 inline-flex items-center text-xl shadow-lg">
                         <i class="ph-bold ph-whatsapp-logo mr-3"></i>
-                        Pedir Asesoría Gratuita
+                        Sí, quiero mi página web
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ===== PIE DE PÁGINA ===== -->
     <footer class="text-center py-10 bg-slate-800 text-slate-400">
         <p>&copy; <span id="year"></span> Costa Web. Todos los derechos reservados.</p>
-        <p class="text-sm mt-2">Hecho con ❤️ en el Partido de La Costa.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Inicializa la librería de animaciones
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 50,
+        AOS.init({ duration: 800, once: true, offset: 50 });
+        
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
 
-        // Script para el menú móvil (si lo necesitas en el futuro)
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
