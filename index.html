@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Costa Web | Diseño Web Profesional en el Partido de La Costa</title>
+    <meta name="description" content="Impulsa tu negocio local con una página web a medida. Diseño profesional, adaptable a celulares y con SEO para que más clientes te encuentren en el Partido de La Costa.">
+    
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:title" content="Costa Web | Diseño Web Profesional en el Partido de La Costa">
+    <meta property="og:description" content="Servicio de diseño y desarrollo web personalizado para PyMEs y emprendedores del Partido de La Costa.">
+    <meta property="og:image" content="https://tu-sitio-costaweb.netlify.app/imagenes/og-costaweb.jpg">
+    <meta property="og:url" content="https://tu-sitio-costaweb.netlify.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS y Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- ================================================== -->
+    <!-- ========= LIBRERÍA DE ANIMACIONES (AOS) ========== -->
+    <!-- Este es el 'secreto' para las animaciones al hacer scroll -->
+    <!-- ================================================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        /* Estilo para el efecto de movimiento (Ken Burns) en la imagen principal */
+        .hero-bg {
+            animation: kenburns-zoom-in 15s ease-out both;
+        }
+
+        @keyframes kenburns-zoom-in {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        
+        /* Estilos para el botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            z-index: 100;
+            transition: transform 0.2s ease-in-out;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+    <nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-40 shadow-md">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold text-indigo-800">Costa Web</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicios" class="text-gray-600 hover:text-indigo-600 transition-colors">Servicios</a>
+                    <a href="#portafolio" class="text-gray-600 hover:text-indigo-600 transition-colors">Portafolio</a>
+                    <a href="#proceso" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Proceso</a>
+                    <a href="#contacto" class="bg-indigo-600 text-white font-bold py-2 px-5 rounded-full hover:bg-indigo-700 transition-colors">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="ph-bold ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#servicios" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Servicios</a>
+            <a href="#portafolio" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Portafolio</a>
+            <a href="#proceso" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Proceso</a>
+            <a href="#contacto" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- ===== SECCIÓN HERO (ENCABEZADO PRINCIPAL) ===== -->
+    <header class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <!-- Imagen de fondo con efecto de movimiento -->
+        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center hero-bg" style="background-image: url('https://images.unsplash.com/photo-1554494542-d62c97693555?q=80&w=2070&auto=format&fit=crop');"></div>
+        <!-- Capa oscura para mejorar legibilidad del texto -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+        <!-- Contenido -->
+        <div class="relative z-10 text-center px-4" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">Diseño Web Profesional<br>en el Partido de La Costa.</h1>
+            <p class="mt-4 text-lg md:text-xl text-slate-200 max-w-3xl mx-auto">Creo páginas a medida para que tu negocio se destaque, genere confianza y consiga más clientes.</p>
+            <div class="mt-8">
+                <a href="#servicios" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform hover:scale-105 inline-block text-lg">Ver mis Servicios</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-7xl px-4 py-20">
+
+        <!-- ===== SECCIÓN SERVICIOS ===== -->
+        <section id="servicios" class="py-20">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Soluciones para tu Negocio</h2>
+                <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Desde una presencia inicial hasta un sitio completo, tengo un plan para vos.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500" data-aos="fade-up" data-aos-delay="100">
+                    <i class="ph-bold ph-rocket-launch text-5xl text-indigo-600 mb-5"></i>
+                    <h3 class="text-2xl font-bold mb-3">Página de Presentación</h3>
+                    <p class="text-gray-600 mb-4">La solución ideal para tener una presencia online profesional, optimizada para Google y lista para compartir por WhatsApp.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500" data-aos="fade-up" data-aos-delay="200">
+                    <i class="ph-bold ph-files text-5xl text-indigo-600 mb-5"></i>
+                    <h3 class="text-2xl font-bold mb-3">Sitio Web Informativo</h3>
+                    <p class="text-gray-600 mb-4">Un sitio completo con varias páginas (Inicio, Servicios, etc.). Perfecto para negocios que necesitan detallar más su oferta.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500" data-aos="fade-up" data-aos-delay="300">
+                    <i class="ph-bold ph-wrench text-5xl text-indigo-600 mb-5"></i>
+                    <h3 class="text-2xl font-bold mb-3">Mantenimiento Web</h3>
+                    <p class="text-gray-600 mb-4">Me encargo de las actualizaciones y cambios menores para que tu web funcione siempre perfecta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN PORTAFOLIO ===== -->
+        <section id="portafolio" class="py-20">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Mi Trabajo</h2>
+                <p class="text-gray-600 mt-3">Un caso de éxito local.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden md:flex items-center" data-aos="fade-up">
+                <div class="md:w-1/2">
+                     <img src="https://placasdelacosta.com.ar/imagenes/og-image.jpg" alt="Captura de pantalla del sitio Placas de La Costa" class="h-full w-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12">
+                    <span class="text-sm font-semibold text-indigo-600 uppercase">Caso de Éxito</span>
+                    <h3 class="text-3xl font-bold mt-2 mb-4">Placas de La Costa</h3>
+                    <p class="text-gray-600 mb-6">Sitio de presentación para este negocio local, permitiéndoles mostrar su catálogo de forma profesional y centralizar las consultas a través de WhatsApp, resultando en una herramienta de ventas clara y efectiva.</p>
+                    <a href="https://placasdelacosta.com.ar/" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-700 hover:text-indigo-900 inline-flex items-center group">
+                        Ver el Sitio en Vivo <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN MI PROCESO (Sobre Mí) ===== -->
+        <section id="proceso" class="py-20">
+             <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Mi Forma de Trabajo</h2>
+                <p class="text-gray-600 mt-3">Un proceso simple y transparente para garantizar el mejor resultado.</p>
+            </div>
+            <div class="relative">
+                <!-- Línea de tiempo vertical -->
+                <div class="hidden md:block absolute top-0 bottom-0 left-1/2 w-0.5 bg-indigo-200"></div>
+                <!-- Paso 1 -->
+                <div class="md:flex items-center md:justify-end mb-16 md:mb-8" data-aos="fade-left">
+                    <div class="md:w-5/12 p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">1. Charla y Asesoría</h3>
+                        <p class="text-sm text-gray-600">Nos reunimos y me contás sobre tu negocio. Entiendo tus necesidades y te asesoro sobre la mejor solución web, sin costo.</p>
+                    </div>
+                </div>
+                 <!-- Paso 2 -->
+                <div class="md:flex items-center md:justify-start mb-16 md:mb-8" data-aos="fade-right">
+                    <div class="md:w-5/12 md:text-right p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">2. Diseño y Propuesta</h3>
+                        <p class="text-sm text-gray-600">Te presento una propuesta clara con el diseño y la estructura de tu futura web. Hacemos los ajustes necesarios hasta que estés 100% conforme.</p>
+                    </div>
+                </div>
+                 <!-- Paso 3 -->
+                <div class="md:flex items-center md:justify-end mb-16 md:mb-8" data-aos="fade-left">
+                    <div class="md:w-5/12 p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">3. Desarrollo</h3>
+                        <p class="text-sm text-gray-600">Con el diseño aprobado, construyo la página web, optimizándola para que sea rápida, segura y se vea perfecta en todos los dispositivos.</p>
+                    </div>
+                </div>
+                 <!-- Paso 4 -->
+                 <div class="md:flex items-center md:justify-start" data-aos="fade-right">
+                    <div class="md:w-5/12 md:text-right p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">4. Lanzamiento y Soporte</h3>
+                        <p class="text-sm text-gray-600">Publico tu página y te entrego todos los accesos. Tu negocio ya está online. ¡A celebrar y conseguir nuevos clientes!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN CONTACTO ===== -->
+        <section id="contacto" class="bg-indigo-800 text-white rounded-2xl p-10 md:p-16 text-center mt-20" data-aos="zoom-in">
+            <h2 class="text-4xl font-extrabold">¿Listo para que tu negocio<br>se destaque en La Costa?</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-indigo-200">Hablemos sin compromiso. Contame sobre tu proyecto y te prepararé una propuesta a medida.</p>
+            <div class="mt-8">
+                <a href="https://wa.me/TU_NUMERO_DE_WHATSAPP?text=Hola!%20Vi%20tu%20página%20y%20quisiera%20una%20asesoría%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform hover:scale-105 inline-flex items-center text-lg">
+                    <i class="ph-bold ph-whatsapp-logo mr-3"></i>
+                    Enviar un WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== BOTÓN FLOTANTE DE WHATSAPP ===== -->
+    <a href="https://wa.me/TU_NUMERO_DE_WHATSAPP?text=Hola!%20Vi%20tu%20página%20y%20quisiera%20una%20asesoría." target="_blank" rel="noopener noreferrer" class="whatsapp-float flex items-center justify-center">
+        <i class="ph-bold ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="text-center mt-20 py-10 bg-gray-200">
+        <p class="text-gray-600">&copy; <span id="year"></span> Costa Web. Todos los derechos reservados.</p>
+        <p class="text-sm text-gray-500 mt-2">Diseño y desarrollo web en el Partido de La Costa.</p>
+    </footer>
+
+    <!-- ======================================================= -->
+    <!-- ========= SCRIPTS PARA LAS FUNCIONALIDADES ========== -->
+    <!-- ======================================================= -->
+    
+    <!-- Script de la librería de animaciones AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa la librería AOS para que funcionen las animaciones
+        AOS.init({
+            duration: 800, // Duración de la animación en milisegundos
+            once: true,    // La animación ocurre solo una vez
+        });
+
+        // Script para el menú móvil
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Script para que el año del footer se actualice solo
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
