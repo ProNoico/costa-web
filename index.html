@@ -25,41 +25,41 @@
 
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        /* Letras y colores modernos inspirados en tus referencias */
         h1, h2, h3, .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
 <body class="bg-white text-slate-800">
 
     <!-- ===== BARRA DE NAVEGACIÓN ===== -->
-    <<nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
-    <div class="container mx-auto max-w-7xl px-4">
-        <div class="flex justify-between items-center py-4">
-            <a href="#">
-                <img src="imagenes/logo.png" alt="Logo de Costa Web" class="h-20">
-            </a>
-            <div class="hidden md:flex items-center space-x-8 font-display font-bold">
-                <a href="#solucion" class="text-gray-600 hover:text-indigo-600 transition-colors">La Solución</a>
-                <a href="#oferta" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Oferta</a>
-                <a href="#portafolio" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Trabajo</a>
-                <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition-colors">Preguntas</a>
-                <a href="#contacto" class="bg-indigo-600 text-white py-2 px-5 rounded-full hover:bg-indigo-700 transition-colors">Charlemos</a>
-            </div>
-             <div class="md:hidden">
-                <button id="menu-btn" class="text-gray-700">
-                    <i class="ph-bold ph-list text-3xl"></i>
-                </button>
+    <!-- CORRECCIÓN 1: Se eliminó el '<' extra que estaba antes de la etiqueta <nav> -->
+    <nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#">
+                    <img src="imagenes/logo.png" alt="Logo de Costa Web" class="h-20">
+                </a>
+                <div class="hidden md:flex items-center space-x-8 font-display font-bold">
+                    <a href="#solucion" class="text-gray-600 hover:text-indigo-600 transition-colors">La Solución</a>
+                    <a href="#oferta" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Oferta</a>
+                    <a href="#portafolio" class="text-gray-600 hover:text-indigo-600 transition-colors">Mi Trabajo</a>
+                    <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition-colors">Preguntas</a>
+                    <a href="#contacto" class="bg-indigo-600 text-white py-2 px-5 rounded-full hover:bg-indigo-700 transition-colors">Charlemos</a>
+                </div>
+                 <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="ph-bold ph-list text-3xl"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-        <a href="#solucion" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">La Solución</a>
-        <a href="#oferta" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Oferta</a>
-        <a href="#portafolio" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Trabajo</a>
-        <a href="#faq" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Preguntas</a>
-        <a href="#contacto" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Charlemos</a>
-    </div>
-</nav>
+         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#solucion" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">La Solución</a>
+            <a href="#oferta" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Oferta</a>
+            <a href="#portafolio" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Mi Trabajo</a>
+            <a href="#faq" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Preguntas</a>
+            <a href="#contacto" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50">Charlemos</a>
+        </div>
+    </nav>
 
     <!-- ===== SECCIÓN HERO (TOCANDO EL DOLOR) ===== -->
     <header class="bg-white">
@@ -224,11 +224,23 @@
     <script>
         AOS.init({ duration: 800, once: true, offset: 50 });
         
+        // --- CORRECCIÓN 2: Lógica para cerrar el menú móvil ---
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+
+        // Abre y cierra el menú al hacer clic en el ícono de hamburguesa
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Cierra el menú cuando se hace clic en uno de los enlaces
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        // --- FIN DE LA CORRECCIÓN 2 ---
 
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
